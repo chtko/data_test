@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph метатеги для Discord -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="Крутое видео">
+    <meta property="og:description" content="Посмотри это видео!">
+    <meta property="og:url" content="https://your-domain.com">
+    
+    <!-- Метатеги для видео -->
+    <meta property="og:video" content="https://github.com/chtko/data_test/releases/download/%D0%A2%D0%B5%D1%81%D1%82/default.mp4">
+    <meta property="og:video:secure_url" content="https://github.com/chtko/data_test/releases/download/%D0%A2%D0%B5%D1%81%D1%82/default.mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    
+    <!-- Превью изображение (можно заменить на скриншот из видео) -->
+    <meta property="og:image" content="https://via.placeholder.com/1280x720/667eea/ffffff?text=Video+Preview">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    
+    <!-- Twitter Card метатеги для дополнительной совместимости -->
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="Крутое видео">
+    <meta name="twitter:description" content="Посмотри это видео!">
+    <meta name="twitter:player" content="https://github.com/chtko/data_test/releases/download/%D0%A2%D0%B5%D1%81%D1%82/default.mp4">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+    <meta name="twitter:image" content="https://via.placeholder.com/1280x720/667eea/ffffff?text=Video+Preview">
+    
+    <title>Discord Video Embed</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        
+        .info {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .info p {
+            color: #495057;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .video-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        video {
+            width: 100%;
+            display: block;
+        }
+        
+        .url-box {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-family: monospace;
+            word-break: break-all;
+            color: #495057;
+        }
+        
+        .steps {
+            margin-top: 30px;
+        }
+        
+        .steps h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .steps ol {
+            padding-left: 20px;
+        }
+        
+        .steps li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #495057;
+        }
+        
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Discord Video Embed</h1>
+        
+        <div class="info">
+            <h3>✅ Сайт готов!</h3>
+            <p>Этот сайт настроен для показа видео-вложения в Discord. Когда вы отправите ссылку на этот сайт в Discord, бот автоматически создаст встроенный проигрыватель с видео.</p>
+            <span class="badge">Open Graph метатеги настроены</span>
+        </div>
+        
+        <div class="steps">
+            <h3>📝 Как использовать:</h3>
+            <ol>
+                <li>Разместите этот HTML-файл на веб-сервере (GitHub Pages, Netlify, Vercel и т.д.)</li>
+                <li>Получите URL вашего сайта</li>
+                <li>Отправьте ссылку в Discord</li>
+                <li>Discord автоматически создаст embed с видео!</li>
+            </ol>
+        </div>
+        
+        <div class="info">
+            <h3>⚙️ Настройки метатегов:</h3>
+            <p>В коде настроены все необходимые Open Graph метатеги:</p>
+            <ul style="padding-left: 20px; margin-top: 10px;">
+                <li><strong>og:video</strong> - прямая ссылка на MP4 файл</li>
+                <li><strong>og:video:type</strong> - тип видео (video/mp4)</li>
+                <li><strong>og:image</strong> - превью изображение</li>
+                <li><strong>og:title/description</strong> - название и описание</li>
+            </ul>
+        </div>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="https://github.com/chtko/data_test/releases/download/%D0%A2%D0%B5%D1%81%D1%82/default.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        
+        <div class="url-box">
+            <strong>Видео URL:</strong><br>
+            https://github.com/chtko/data_test/releases/download/Тест/default.mp4
+        </div>
+    </div>
+</body>
+</html>
